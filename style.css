@@ -1,0 +1,232 @@
+body{
+  background-color: rgb(5, 25, 35);
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 500px) {
+
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  
+}
+@media (min-width: 801px) {
+
+}
+
+
+.intro-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+
+  margin: 40px;
+  padding: 10px;
+}
+
+.profession{
+  font-size: 40px;
+  color: rgb(5, 130, 202);
+  margin: 15px;
+}
+
+.name{
+  font-size: 80px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.info{
+  font-size: 25px;
+  margin: 15px;
+  font-weight: lighter;
+}
+
+.links-container{
+  margin: 30px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projects-linker{
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+
+  background-color: rgb(0, 100, 148);
+  color: white;
+  border: none;
+  border-radius: 50px;
+
+  font-size: 25px;
+}
+
+.projects-linker:hover{
+  background-color: white;
+  color: rgb(0, 100, 148);
+  cursor: pointer;
+}
+
+.links{
+  font-size: 20px;
+  margin: 15px;
+
+  color: rgb(120, 192, 224);
+  text-decoration: none;
+}
+.links:hover{
+  color: white;
+}
+
+.headline{
+  font-size: 50px;
+  font-weight: bold;
+}
+.headline-container{
+  display: flex; 
+  align-items: center; 
+  text-align: center;
+}
+
+.headline-container::before, .headline-container::after{
+  content: '';
+  flex: 1;
+  height: 3px;
+  background-color: white;
+}
+
+.about-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+.about-info{
+  font-size: 18px;
+  color: rgb(120, 192, 224);
+  text-align: justify;
+}
+
+.skills-container{
+  position: relative;
+  padding: 30px;
+  
+}
+.skills{
+  display: grid;
+  border-radius: 20px;
+  border: 1px solid #1e2d3d;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 40px;
+}
+.skills-headline{
+  position: absolute;
+  top: -40px;
+  left: 50px;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.skill{
+  font-size: 30px;
+  font-weight: bold;
+  
+  color: rgb(5, 130, 202);
+  border-color: rgb(5, 130, 202);
+  border: solid;
+  border-radius: 30px;
+
+  margin: 10px;
+  padding: 5px;
+
+  text-align: center;
+}
+
+.projects-container{
+  position: relative;
+  right: 0;
+  left: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  border: 1px solid rgb(120, 192, 224, 0.2);
+
+  padding: 30px;
+  
+}
+
+.project{
+  background-color: rgb(0, 100, 148, 0.2);
+  border-radius: 40px;
+  margin: 20px;
+
+  position: relative;
+}
+
+.picture-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image{
+  width: 300px;
+  height: 150px;
+}
+
+.weather-project{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+}
+
+.project-info-container{
+  text-align: left;
+  padding: 20px;
+}
+
+.project-name{
+  font-size: 40px;
+  margin: 0;
+  font-weight: bold;
+}
+.project-info{
+  font-size: 18px;
+  text-align: justify;
+}
+.project-buttons{
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  justify-content: space-between;
+}
+
+.project-button{
+  background-color: rgb(0, 53, 84);
+  color: white;
+  font-size: 25px;
+
+  border: none;
+  border-radius: 18px;
+
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.project-game-todo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
