@@ -1,3 +1,7 @@
+
+html {
+  scroll-behavior: smooth;
+}
 body{
   background-color: rgb(5, 25, 35);
   color: white;
@@ -5,13 +9,64 @@ body{
 }
 
 @media (max-width: 500px) {
-
+  .intro-container{
+    width: 400px;
+    height: 400px;
+  }
+  .about-info{
+    width: 500px;
+  }
+  .skills{
+    width: 400px;
+  }
+  .projects{
+    width: 500px;
+  }
 }
-@media (min-width: 501px) and (max-width: 800px) {
-  
+@media (min-width: 501px) and (max-width: 700px) {
+  .intro-container{
+    width: 600px;
+    height: 600px;
+  }
+  .about-info{
+    width: 700px;
+  }
+  .skills{
+    width: 600px;
+  }
+  .projects{
+    width: 600px;
+  }
 }
-@media (min-width: 801px) {
-
+@media (min-width: 701px) and (max-width: 950px) {
+  .intro-container{
+    width: 700px;
+    height: 600px;
+  }
+  .about-info{
+    width: 800px;
+  }
+  .skills{
+    width: 700px;
+  }
+  .projects{
+    width: 700px;
+  }
+}
+@media (min-width: 951px) {
+  .intro-container{
+    width: 700px;
+    height: 600px;
+  }
+  .about-info{
+    width: 800px;
+  }
+  .skills{
+    width: 700px;
+  }
+  .projects{
+    width: 800px;
+  }
 }
 
 
@@ -21,7 +76,9 @@ body{
   justify-content: center;
   align-items: first baseline;
 
-  margin: 40px;
+  position: relative;
+
+  margin: 10px 50px;
   padding: 10px;
 }
 
@@ -41,10 +98,11 @@ body{
   font-size: 25px;
   margin: 15px;
   font-weight: lighter;
+  text-align: justify;
 }
 
 .links-container{
-  margin: 30px;
+  margin-left: 70px;
   width: 400px;
   display: flex;
   align-items: center;
@@ -77,6 +135,7 @@ body{
   color: rgb(120, 192, 224);
   text-decoration: none;
 }
+
 .links:hover{
   color: white;
 }
@@ -85,6 +144,7 @@ body{
   font-size: 50px;
   font-weight: bold;
 }
+
 .headline-container{
   display: flex; 
   align-items: center; 
@@ -106,32 +166,43 @@ body{
 
   padding: 30px;
 }
+
 .about-info{
   font-size: 18px;
   color: rgb(120, 192, 224);
   text-align: justify;
+  margin: 0px 10px 15px;
+  padding: 20px;
 }
 
 .skills-container{
   position: relative;
   padding: 30px;
-  
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .skills{
   display: grid;
-  border-radius: 20px;
-  border: 1px solid #1e2d3d;
   grid-template-columns: 1fr 1fr 1fr;
 
+  border-radius: 20px;
+  border: 1px solid #1e2d3d;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
 
   padding: 40px;
 }
+
 .skills-headline{
   position: absolute;
-  top: -40px;
-  left: 50px;
+  top: -70px;
+  left: 40px;
 
   font-size: 40px;
   font-weight: bold;
@@ -157,20 +228,20 @@ body{
   right: 0;
   left: 0;
 
+  display: flex;
   align-items: center;
   justify-content: center;
-
+}
+.projects{
   border-radius: 20px;
   border: 1px solid rgb(120, 192, 224, 0.2);
-
   padding: 30px;
-  
 }
-
 .project{
   background-color: rgb(0, 100, 148, 0.2);
   border-radius: 40px;
   margin: 20px;
+  padding: 15px;
 
   position: relative;
 }
@@ -179,17 +250,22 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 20px;
 }
 
 .image{
-  width: 300px;
   height: 150px;
+  border-radius: 20px;
+  object-fit: fill;
+  margin: 0;
 }
 
 .weather-project{
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
+  padding: 40px;
 }
 
 .project-info-container{
@@ -205,6 +281,7 @@ body{
 .project-info{
   font-size: 18px;
   text-align: justify;
+  font-weight: lighter;
 }
 .project-buttons{
   position: absolute;
@@ -216,12 +293,11 @@ body{
 .project-button{
   background-color: rgb(0, 53, 84);
   color: white;
-  font-size: 25px;
-
+  font-size: 20px;
   border: none;
   border-radius: 18px;
 
-  padding: 5px;
+  padding: 10px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -229,4 +305,8 @@ body{
 .project-game-todo{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.link{
+  text-decoration: none;
 }
